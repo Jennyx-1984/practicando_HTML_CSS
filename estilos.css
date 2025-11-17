@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    margin:20px auto;
+}
+
+body{
+background-color: #E5E5E5;
+    font-family: 'Barlow',Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 4vw, 32px);
+    font-weight: bold;
+    color: #df2e2f;
+    display: flex;
+   justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    
+    
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: center;
+}
+
+.primera-fila{
+border-width: 15px 15px 10px 15px;
+border-style: solid;
+border-color: black;
+display: flex;
+flex-wrap: nowrap;
+width: 100%;
+background-color: #417d69;
+padding: 20px;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.logo,.registro{
+   background-color: #f7d168;
+   width: 20%;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+nav{
+    background-color: #f7d168;
+    width: 54%;
+    height: 70px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   
+
+}
+
+
+.segunda-fila{
+    border-width: 10px 15px 15px 15px;
+    border-style:solid;
+    border-color:black ;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+background-color:#df2e2f;
+padding: 20px;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.banner{
+     background-color: #f7d168;
+    width: 88vw;
+    height: 70px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: center;
+}
+
+
+.caja{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    background-color: #417d69;
+    border-width: 15px 10px 15px 15px;
+    border-style:solid; 
+    border-color:black;
+    
+}
+
+main > .caja:nth-child(2) {
+  background-color:#df2e2f;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-width: 15px 15px 15px 10px;
+  border-style:solid; 
+    border-color:black;
+    padding: 20px;
+}
+
+
+article{
+    width: 48%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7d168;
+}
+
+blockquote{
+    width: 99%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7d168;
+}
+
+.opcion{
+    background-color: #f7d168;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer{
+    border: 15px solid black;
+    background-color: #f7d168;
+    width: 95%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+
+/*Tablet:** entre 768px a 992px*/
+@media screen and (min-width:768px) and (max-width:1185px){
+.primera-fila{
+border-width: 20px 20px 10px 20px;
+}
+
+.segunda-fila{
+    border-width: 10px 20px 20px 20px;
+}
+    
+   
+    main{
+        flex-direction: column;
+        
+}
+
+.caja{
+    width: 100%;
+    border-width: 20px 20px 10px 20px;
+}
+
+main > .caja:nth-child(2) {
+    border-width: 10px 20px 20px 20px;
+    width: 100%;
+}
+
+footer{
+    border-width: 20px;
+}
+}
+
+/*MOVIL */
+@media (max-width:576px){
+
+    body{
+        font-size: 32px;
+        
+    }
+
+    
+    .primera-fila{
+        background-color: #df2e2f;
+        flex-direction: column;
+        border-width: 20px 20px 10px 20px;
+        
+    }
+
+    .segunda-fila{
+        border-width: 10px 20px 20px 20px;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    .caja{
+        background-color: #df2e2f;
+        width: 100%;
+        border-width: 20px 20px 10px 20px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    main > .caja:nth-child(2) {
+        width: 100%;
+   border-width: 10px 20px 20px 20px;
+   border-style: solid;
+   border-color: black;
+}
+
+    .logo,nav,.registro,.banner,article,blockquote,.opcion{
+        width: 100%;
+        color: #417d69;
+    }
+
+    .caja > article:nth-child(2), .caja > article:nth-child(4){
+        margin-bottom: 30px;
+    }
+
+    footer{
+        color: #417d69;
+        border-width: 20px;
+        
+    }
+}
